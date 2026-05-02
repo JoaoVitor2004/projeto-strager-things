@@ -17,4 +17,4 @@ Projeto foi desenvolvido com uma biblioteca de animaçãos gsap para deixar o vi
 
 <br/>
 
-⚙️ Para acessar o projeto <a href="" target="_blank">clique aqui</a>
+⚙️ Para acessar o projeto <a href="https://joaovitor2004.github.io/projeto-strager-things/" target="_blank">clique aqui</a>
