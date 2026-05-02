@@ -479,6 +479,10 @@ footer .textosRodape {
 
 @media (width < 768px) {
 
+    #preloader svg {
+        width: 80vw;
+    }
+
     .secao-hero div p {
         font-size: 7vw;
     }

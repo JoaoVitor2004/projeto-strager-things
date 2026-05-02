@@ -33,7 +33,7 @@ const animar = () => {
     })
 
     gsap.from("picture:nth-child(1)", {
-        y: -80,
+        opacity: 0,
         duration: 1
     })
 
