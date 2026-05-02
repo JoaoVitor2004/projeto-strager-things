@@ -1,0 +1,493 @@
+@import "./reset.css";
+
+@font-face {
+    font-family: Benguiat;
+    src: url("../assets/fonts/Benguiat\ Bold.ttf") format(truetype);
+}
+
+body {
+    overflow: hidden;
+}
+
+#preloader {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #0c0102;
+    overflow: hidden;
+}
+
+#preloader svg {
+    width: 30vw;
+    height: auto;
+}
+
+#preloader svg path {
+    fill: rgba(167, 37, 37, 0.507);
+    stroke: rgb(223, 26, 26);
+    stroke-dasharray: 1240;
+}
+
+main section {
+    width: 1520px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+section div button {
+    width: 15rem;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 0.5px #fff solid;
+    padding-bottom: 15px;
+}
+
+header {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 95%;
+    padding: 0 4rem;
+    margin: 6rem auto 12rem auto;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h4 {
+    font-size: 35px;
+}
+
+header img {
+    width: 100px;
+    max-width: 100%;
+}
+
+main {
+    width: 100%;
+    color: #fff;
+    background-color: #0C0102;
+}
+
+main .secao-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 8%;
+}
+
+main picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main picture img {
+    width: 100%;
+    height: 100%;
+}
+
+main .secao-hero .fade {
+    background: linear-gradient(180deg, rgba(12, 1, 2, 0.00) 0%, #0C0102 100%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.secao-hero .container {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.secao-hero .container.text {
+    align-items: start;
+}
+
+.secao-hero div h1 {
+    margin-bottom: 20px;
+    font-size: 86px;
+    font-family: "Benguiat";
+}
+
+.secao-hero div h2 {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.secao-hero div p {
+    text-align: end;
+    font-size: 35px;
+    max-width: 550px;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+main .secao-cidades {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-bottom: 7vh;
+    min-height: 60vh;
+}
+
+.secao-cidades .descricao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.descricao h2 {
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.secao-cidades .cidades {
+    display: flex;
+    gap: 30px;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.secao-cidades .cidades img {
+    width: 100%;
+}
+
+main .secao-patrocinadores {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    gap: 6%;
+}
+
+.secao-patrocinadores .logos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secao-patrocinadores .patrocinadores {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.patrocinadores .patrocinador {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.patrocinador img {
+    max-width: 60px;
+}
+
+.patrocinador p {
+    max-width: 300px;
+}
+
+main .secao-estados {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    gap: 80px;
+    position: relative;
+    z-index: 999;
+}
+
+.secao-estados h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.secao-estados .estados {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+main .img-monstro {
+    padding-top: 100px;
+    position: relative;
+    z-index: 9;
+    background: url("../assets/images/bg-sec2.webp") no-repeat center;
+    background-size: cover;
+    background-color: #0C0102;
+    width: 100%;
+    min-height: 100vh;
+}
+
+footer {
+    position: relative;
+    min-height: 50vh;
+    z-index: -1;
+    color: #fff;
+    width: 100%;
+    min-height: 80vh;
+    padding: 7vh 10vw 7vh 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .img-rodape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+footer .container-rodape {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+footer .container-rodape div h2 {
+    font-family: "Benguiat", sans-serif;
+    font-size: 4vw;
+    margin-bottom: 20px;
+}
+
+footer .container-rodape div h3 {
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 12px;
+}
+
+.container-rodape .informacoes-rodape {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 100px;
+    gap: 50px;
+}
+
+.informacoes-rodape .descricao h4 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.descricao .logos-redes-socias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.parceria-midia {
+    margin-bottom: 20px;
+}
+
+.inconstitucional {
+    margin-bottom: 50px;
+}
+
+.nomes-inconstitucionais {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .logo-rodape {
+    opacity: 0.5;
+    position: absolute;
+    z-index: 2;
+    right: 100px;
+    bottom: 50px;
+    font-size: 120px;
+}
+
+footer .textosRodape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow-x: hidden;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    h3 {
+        color: #acacac;
+        font-size: 10vw;
+        font-family: "Benguiat", sans-serif;
+        font-weight: bolder;
+        mix-blend-mode: color-dodge;
+        animation: textoInfinito 10s linear infinite;
+    }
+}
+
+@keyframes textoInfinito {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (width < 1200px) {
+
+    main .secao-hero {
+        padding: 200px 3vw 0 3vw;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    main .secao-hero .container.text {
+        align-items: center;
+    }
+
+    .secao-hero div {
+        text-align: center;
+    }
+
+    .secao-hero div p {
+        text-align: center;
+    }
+
+    .secao-hero div h1 {
+        font-size: 7vw;
+    }
+
+    main .secao-cidades {
+        min-height: 100vh;
+        padding: 0 6vw;
+    }
+
+    main .secao-cidades .cidades {
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .secao-cidades .descricao {
+        justify-content: center;
+    }
+
+    .secao-cidades .descricao button {
+        display: none;
+    }
+
+    .secao-cidades .descricao h2 {
+        font-size: 5vw;
+    }
+
+    .secao-hero div button {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    main .secao-patrocinadores .logos {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    main .secao-patrocinadores .patrocinadores {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .patrocinadores .patrocinador {
+        align-items: center;
+    }
+
+    main .secao-patrocinadores {
+        gap: 80px;
+    }
+
+    main .secao-estados {
+        height: 40vh;
+        padding: 0 6vw;
+    }
+
+    .secao-estados h2 {
+        font-size: 4vw;
+    }
+
+    main .secao-estados .estados {
+        animation: textoInfinito 2s linear alternate infinite;
+        gap: 30px;
+    }
+
+}
+
+@media (width < 900px) {
+
+    footer .container-rodape {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .container-rodape div {
+        text-align: center;
+    }
+
+    footer .container-rodape div h2 {
+        font-size: 8vw;
+    }
+
+    footer .container-rodape .informacoes-rodape {
+        flex-wrap: wrap;
+    }
+
+    .informacoes-rodape div:nth-child(1) {
+        width: 100%;
+    }
+
+    .informacoes-rodape div:nth-child(2),
+    .informacoes-rodape div:nth-child(3) {
+        width: 40%;
+    }
+
+    .informacoes-rodape div {
+        margin: 0 auto;
+    }
+}
+
+@media (width < 768px) {
+
+    .secao-hero div p {
+        font-size: 7vw;
+    }
+
+    .secao-estados h2 {
+        font-size: 6vw;
+    }
+
+    .secao-estados .estados {
+        font-size: 4vw;
+    }
+}
