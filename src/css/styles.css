@@ -122,6 +122,14 @@ main .secao-hero .fade {
     align-items: end;
 }
 
+.secao-hero .container-description {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
 .secao-hero .container.text {
     align-items: start;
 }
@@ -137,10 +145,10 @@ main .secao-hero .fade {
     font-size: 25px;
 }
 
-.secao-hero div p {
+.secao-hero .container-description .text-split {
     text-align: end;
     font-size: 35px;
-    max-width: 550px;
+    max-width: 100%;
     line-height: 50px;
     margin-bottom: 40px;
 }
@@ -368,18 +376,23 @@ footer .textosRodape {
 
     main .secao-hero .container.text {
         align-items: center;
+        justify-content: center;
     }
 
     .secao-hero div {
         text-align: center;
     }
 
-    .secao-hero div p {
+    .secao-hero .container-description {
+        align-items: center;
+    }
+
+    .secao-hero .container-description .text-split {
         text-align: center;
     }
 
     .secao-hero div h1 {
-        font-size: 7vw;
+        font-size: 10vw;
     }
 
     main .secao-cidades {
@@ -485,10 +498,10 @@ footer .textosRodape {
     }
 
     .secao-hero .container {
-        align-items: center;
+        align-items: start;
     }
 
-    .secao-hero div p {
+    .secao-hero .container-description .text-split {
         font-size: 4vw;
         line-height: 25px;
         margin-bottom: 60px;
